@@ -1,0 +1,48 @@
+.box {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+}
+.box div {
+  font-size: 6rem;
+  margin-right: 20px;
+  animation: light 0.8s 99;
+}
+.box div:nth-of-type(1) {
+  animation-delay: 0.1s;
+}
+.box div:nth-of-type(2) {
+  animation-delay: 0.2s;
+}
+.box div:nth-of-type(3) {
+  animation-delay: 0.3s;
+}
+.box div:nth-of-type(4) {
+  animation-delay: 0.4s;
+}
+.box div:nth-of-type(5) {
+  animation-delay: 0.5s;
+}
+.box div:nth-of-type(6) {
+  animation-delay: 0.6s;
+}
+.box div:nth-of-type(7) {
+  animation-delay: 0.7s;
+}
+.box div:nth-of-type(8) {
+  animation-delay: 0.8s;
+}
+
+@keyframes light {
+  0% {
+    color: yellow;
+    text-shadow: 3px 3px 10px indianred;
+  }
+  40%, 100% {
+    color: #888;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

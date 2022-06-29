@@ -1,0 +1,28 @@
+.box {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    & div {
+        font-size: 6rem;
+        margin-right: 20px;
+        animation: light 0.8s 99;
+    } $num: 0.1s;
+    @for $i from 1 through 8 {
+        div:nth-of-type(#{$i}) {
+            animation-delay: #{$num}; 
+        }
+        $num: $num + 0.1s;
+    }
+}
+@keyframes light {
+    0% {
+        color: yellow;
+        text-shadow: 3px 3px 10px indianred;
+    }
+    40%,
+    100% {
+        color: #888;
+    }
+}
